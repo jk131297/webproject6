@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+    --btn-color: #ba0cc5;
+    --btn-hover-color:#8e2a95;
+
+}
+/* body */
+.container{    
+    height: 100vh;
+}
+/* Navbar */
+nav {
+  display: grid;
+  margin: 15px;
+  grid-template-columns: 1fr 4fr 1fr;
+  column-gap: 30px;
+}
+header {
+  height: 65px;
+  background-color: black;
+  border: 1px solid #0a0909;
+}
+
+.logo {
+  justify-self: center;
+  width: 90%;
+}
+
+.logo img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+nav ul {
+  border-left: 1px solid #bdb6b6;
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  width: 100%;
+  height: 95%;
+  align-items: center;
+  padding-left: 35px;
+}
+.nav-first {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.header-btn {
+  align-self: center;
+  justify-self: center;
+}
+.header-btn button{
+    border-radius: 6px;
+    color: white;
+    width: 139%;
+    padding: 4px;
+    background-color: var(--btn-color);
+    transition: all;
+    transition-duration: 500ms;
+    font-weight: 600;
+  }
+  .header-btn button:hover{
+    cursor: pointer;
+    background-color: var(--btn-hover-color);
+  }
+
+  /* Main */
+
+  main::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+  }
+
+  main{
+    position: relative;
+    height: 90%;
+    overflow: hidden;    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .main-container{
+    height: 60%;
+    text-align: center;
+    width: 80%;
+    color: white;    
+    font-weight: bold;
+  }
+.title{
+
+    font-size: 3rem;
+}
+.main-btn{
+    margin-top: 20px;
+}
+.main-btn button{
+    color: white;    
+    border-radius: 6px;
+    width: 18%;
+    padding: 5px;
+    background-color: var(--btn-color);
+    transition: all;
+    transition-duration: 500ms;
+    font-weight: 600;
+    border: none;
+}
+
+.main-btn button:hover{
+    
+    cursor: pointer;
+    background-color: var(--btn-hover-color);
+}
